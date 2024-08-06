@@ -1,0 +1,279 @@
+# Project information
+site_name: "Turn-key research data management repository"
+site_url: "https://inveniordm.docs.cern.ch"
+
+# Repository
+repo_url: "https://github.com/inveniosoftware/docs-invenio-rdm"
+
+# Copyright
+copyright: "Copyright &copy; 2019-2024 CERN, Northwestern University and contributors."
+
+# Configuration
+theme:
+  name: material
+  custom_dir: theme
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      extra_css:
+        - stylesheets/extra.css
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: orange
+      toggle:
+        accent: orange
+        icon: material/brightness-4
+        name: Switch to light mode
+  font: false
+  logo: "images/logo-rdm.png"
+  favicon: "images/favicon.svg"
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - content.code.copy
+
+nav:
+  - Home: "index.md"
+
+  - What is InvenioRDM?:
+    - Overview: "features/features-walk-through/index.md"
+    - Beautiful UX: "features/ux.md"
+    - Highly scalable: "features/scalable.md"
+    - Customizable: "features/customization.md"
+    - Interoperable: "features/interoperable.md"
+    - Powerful: "features/powerful.md"
+    - Secure: "features/secure.md"
+
+  - Install:
+    - Overview: "install/index.md"
+    - Quick start:
+      - Overview: "install/index.md"
+    - System requirements: "install/requirements.md"
+    - Install CLI: "install/cli.md"
+    - Initialize: "install/scaffold.md"
+    - Build, setup & run: "install/build-setup-run.md"
+    - Migrate: "install/migrate.md"
+    - Destroy: "install/destroy.md"
+
+  - Use:
+    - Overview: "install/run.md"
+    - Site banners: "features/features-walk-through/banners.md"
+    - Notifications: "features/features-walk-through/notifications.md"
+    - Access requests: "features/features-walk-through/access_requests.md"
+    - REST API:
+      - Overview: "reference/rest_api_index.md"
+      - Quickstart: "reference/rest_api_quickstart.md"
+      - Communities: "reference/rest_api_communities.md"
+      - Drafts and Records: "reference/rest_api_drafts_records.md"
+      - Groups: "reference/rest_api_groups.md"
+      - Members: "reference/rest_api_members.md"
+      - Requests: "reference/rest_api_requests.md"
+      - Users: "reference/rest_api_users.md"
+      - Reviews: "reference/rest_api_reviews.md"
+      - Vocabularies: "reference/rest_api_vocabularies.md"
+      - Names: "reference/rest_api_names.md"
+      - Funders: "reference/rest_api_funders.md"
+      - Awards: "reference/rest_api_awards.md"
+      - OAI-PMH Sets: "reference/rest_api_oaipmh_sets.md"
+      - Statistics: "reference/rest_api_statistics.md"
+
+  - Operate:
+    - Overview: "develop/index.md"
+    - Deploy and run an instance:
+      - Deploy: deploy/index.md
+      - Infrastructure: develop/architecture/infrastructure.md
+      - Logging: customize/Logging.md
+      - Backup search indices: develop/howtos/backup_search_indices.md
+    - Customization philosophy:
+      - Overview: customize/index.md
+    - Customize look-and-feel:
+      - Overview: "customize/look-and-feel/index.md"
+      - Change logo: "customize/look-and-feel/logo.md"
+      - Change templates: "customize/look-and-feel/templates.md"
+      - Change theme: "customize/look-and-feel/theme.md"
+      - Change font: "customize/look-and-feel/font.md"
+      - Override React components: "develop/howtos/override_components.md"
+    - Customize metadata model:
+      - Metadata-only records: "customize/metadata_only.md"
+      - Optional metadata: "customize/metadata/optional_fields.md"
+      - Custom fields:
+        - Tutorial: develop/howtos/custom_fields.md
+        - Add fields to records: "customize/metadata/custom_fields/records.md"
+        - Add fields to communities: "customize/metadata/custom_fields/communities.md"
+      - Reference:
+        - Optional metadata: reference/metadata/optional_metadata.md
+        - UI widgets: "reference/custom_fields/widgets.md"
+    - Customize vocabularies:
+        - Overview: "customize/vocabularies/index.md"
+        - Resource types: "customize/vocabularies/resource_types.md"
+        - Affiliations: "customize/vocabularies/affiliations.md"
+        - Names: "customize/vocabularies/names.md"
+        - Funding: "customize/vocabularies/funding.md"
+        - Subjects: "customize/vocabularies/subjects.md"
+        - Users: "customize/vocabularies/users.md"
+    - Configure everything:
+      - Overview: "install/configuration.md"
+      - Authentication: "customize/authentication.md"
+      - Citations: "customize/record_landing_page.md"
+      - DOI registration: "customize/dois.md"
+      - Download: "customize/record_landing_page.md"
+      - Emails:
+        - Templates: "customize/emails.md"
+        - Capture: develop/howtos/dev_email.md
+      - Internationalisation (i18n) and Localisation (l10n): "customize/i18n-and-l10n.md"
+      - Notifications:
+        - Overview: "customize/notifications.md"
+        - Create and configure notifications: develop/howtos/notifications.md
+      - Redirects: develop/howtos/route_migration.md
+      - Restrict access to pages: develop/howtos/restrict_access.md
+      - Search:
+        - Change facets/sorting: "customize/search.md"
+        - Create search terms mappings: develop/howtos/search_terms_migration.md
+      - Static pages: "customize/static_pages.md"
+      - Storage: "customize/s3.md"
+      - Upload Limits: "customize/upload_limits.md"
+    - Custom code: develop/howtos/custom_code.md
+    - Troubleshooting: "install/troubleshoot.md"
+
+  - Contribute:
+    - Overview: contribute/index.md
+    - Onboarding: contribute/onboarding.md
+    - Development process: develop/process.md
+    - Community PR board: maintenance/pr-community-board.md
+    # Merge with above
+    #     - Sprintboard workflow: maintenance/board-workflow.md
+    - RFCs: maintenance/rfcs.md
+    - Virtual environments: "develop/getting-started/virtualenvs.md"
+    - Debugging: "develop/getting-started/debugging.md"
+    - Code of conduct: contribute/code-of-conduct.md
+    - Copyright policy: contribute/copyright-policy.md
+    - Translations:
+      - How to translate: contribute/translators-guide.md
+      - How to contribute translateable code (i18n): develop/howtos/i18n.md
+    - Best practices:
+        - Accessibility (a11y): develop/best-practices/accessibility.md
+        - Commits, PRs & reviews: develop/best-practices/commits.md
+        - CSS/JavaScript: develop/best-practices/css-js.md
+        - React: develop/best-practices/react.md
+        - User interface: develop/best-practices/ui.md
+    - Report or fix a vulnerability:
+      - Security policy: releases/security-policy.md
+      - Fix a vulnerability: develop/howtos/security-fix.md
+    - Writing documentation: maintenance/documentation.md
+
+  - Maintain:
+    - Overview: maintenance/index.md
+    - Newcomers: maintenance/newcomers.md
+    - Release management: maintenance/release-management.md
+    - Modules on GitHub: maintenance/modules.md
+    - Branch management: maintenance/branch-management.md
+    - Demo site & docs: maintenance/demosite.md
+    - Docker images: maintenance/docker-images.md
+
+  - Learn:
+    - Architecture:
+      - Introduction: develop/architecture/index.md
+      - Infrastructure: develop/architecture/infrastructure.md
+      - Software: develop/architecture/software.md
+      - Runtime: develop/architecture/runtime.md
+      - Requests: develop/architecture/requests.md
+      - Communities: develop/architecture/communities.md
+      - Records: develop/architecture/records.md
+      - Event handling: develop/architecture/event_handling.md
+      - Notifications: develop/architecture/notifications.md
+      - Recommended reading: develop/architecture/reading.md
+    - Internals:
+      - Building resources: develop/topics/resource.md
+      - Building services: develop/topics/service.md
+      - Building serializers: develop/topics/serializers.md
+      - Sanitize input data: develop/topics/validation.md
+      - Grouping atomic operations: develop/topics/uow.md
+      - Theming: develop/topics/theming.md
+      - Usage statistics: "reference/statistics.md"
+      - Optimistic concurrency control: develop/concepts/concurrency-control.md
+      - Database transaction management: develop/concepts/transactions.md
+    - Administration panel: develop/topics/administration_panel.md
+    - Create a database migration: develop/howtos/alembic.md
+
+  - Reference:
+    - Overview: reference/index.md
+    - CLI: reference/cli.md
+    - Configuration: reference/configuration.md
+    - Metadata: reference/metadata.md
+    - OAI-PMH: reference/oai_pmh.md
+    - Export formats: reference/export_formats.md
+    - Administration: "reference/administration_reference.md"
+    - File storage: "reference/file_storage.md"
+    - Notifications: "reference/notifications.md"
+    - Releases:
+      - Overview: releases/index.md
+      - Maintenance policy: releases/maintenance-policy.md
+      - Versions:
+          - Version v12.0.0: releases/versions/version-v12.0.0.md
+          - Version v11.0.0: releases/versions/version-v11.0.0.md
+          - Version v10.1.0: releases/versions/version-v10.1.0.md
+          - Version v10.0.0: releases/versions/version-v10.0.0.md
+          - Version v9.1.0: releases/versions/version-v9.1.0.md
+          - Version v9.0.0: releases/versions/version-v9.0.0.md
+          - Version v8.0.0: releases/versions/version-v8.0.0.md
+          - Version v7.0.0: releases/versions/version-v7.0.0.md
+          - Version v6.0.5: releases/versions/version-v6.0.5.md
+          - Version v6.0.0: releases/versions/version-v6.0.0.md
+          - Version v5.0.0: releases/versions/version-v5.0.0.md
+          - Version v4.0.0: releases/versions/version-v4.0.0.md
+          - Version v3.0.0: releases/versions/version-v3.0.0.md
+          - Version v2.0.0: releases/versions/version-v2.0.0.md
+          - Version v1.0.0: releases/versions/version-v1.0.0.md
+      - Upgrade guide:
+          - Upgrade policy: releases/upgrading/index.md
+          - Upgrade from v11 to v12: releases/upgrading/upgrade-v12.0.md
+          - Upgrade from v10 to v11: releases/upgrading/upgrade-v11.0.md
+          - Upgrade from v9 to v10: releases/upgrading/upgrade-v10.0.md
+          - Migrate Docker images: releases/upgrading/migrate-docker-images.md
+          - Migrate v9 to OpenSearch: releases/upgrading/migrate-opensearch-v9.md
+          - Upgrade from v8 to v9: releases/upgrading/upgrade-v9.0.md
+          - Upgrade from v7 to v8: releases/upgrading/upgrade-v8.0.md
+          - Upgrade from v6 to v7: releases/upgrading/upgrade-v7.0.md
+          - Upgrade from v6.0.x to v6.0.5: releases/upgrading/upgrade-v6.0.5.md
+          - Upgrade from v4 to v6: releases/upgrading/upgrade-v6.0.md
+          - Upgrade from v3 to v4: releases/upgrading/upgrade-v4.0.md
+          - Upgrade from v2 to v3: releases/upgrading/upgrade-v3.0.md
+          - Upgrade from v1 to v2: releases/upgrading/upgrade-v2.0.md
+    - Getting help: "develop/getting-started/help.md"
+
+  # - WIP:
+  #   - To remove or merge:
+  #     - Roadmap: contribute/roadmap.md
+  #     - Source code: "develop/getting-started/source-code.md"
+  #     - Package development: "develop/getting-started/package-development.md"
+  #     - Instance development: "develop/getting-started/instance-development.md"
+  #     - tools
+  #     - Coding style: "develop/getting-started/code-style.md"
+  #     - Building system fields: develop/topics/systemfield.md
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/inveniosoftware
+extra_css:
+  - stylesheets/extra.css
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.critic
+
+  - toc:
+      permalink: true
