@@ -198,6 +198,7 @@ nav:
       #   #     - Sprintboard workflow: maintenance/board-workflow.md
       - RFCs: maintenance/rfcs.md
       - How to code on InvenioRDM: "develop/getting-started/inveniordm-development.md"
+      - How to code on an InvenioRDM module: "develop/getting-started/package-development.md"
       - Virtual environments: "develop/getting-started/virtualenvs.md"
       - Debugging: "develop/getting-started/debugging.md"
       - Best practices:
