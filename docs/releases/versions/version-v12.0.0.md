@@ -10,7 +10,7 @@ We're happy to announce the release of InvenioRDM v12.0, the new much anticipate
 
 - [Demo site](https://inveniordm.web.cern.ch)
 
-- [Installation instructions](../../install/index.md)
+- [Installation instructions](../../install/quickstart.md)
 
 ## What's new?
 

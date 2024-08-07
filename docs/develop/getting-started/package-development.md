@@ -67,6 +67,5 @@ pip install -e "~/src/invenio-communities[tests,opensearch2]" \
 
 ### Application integration
 
-See the section [instance development](instance-development.md) for how to
+See the section [instance development](inveniordm-development.md) for how to
 integrate your development versions in the InvenioRDM application.
-

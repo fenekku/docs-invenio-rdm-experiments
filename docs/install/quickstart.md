@@ -1,4 +1,4 @@
-# Installation
+# Quickstart
 
 **Intended audience**
 
@@ -8,7 +8,6 @@ The guide is intended for system administrators and developers who want to try, 
 
 This guide covers how to install InvenioRDM locally on your machine, how to set up and configure your system for InvenioRDM.
 
-## Quick start
 
 #### [1. Install CLI tool](cli.md)
 
@@ -56,25 +55,11 @@ cd my-site/
 invenio-cli check-requirements --development
 ```
 
-
 You can run the main InvenioRDM application in two modes (choose one):
 
 - Containerized application and services (good for a quick preview).
 - Local application with containerized services (good for developers or if you want to customize InvenioRDM).
 
-**Containerized application**
-
-```shell
-invenio-cli containers start --lock --build --setup
-```
-
-**Local application**
-
-```shell
-invenio-cli install
-invenio-cli services setup
-invenio-cli run
-```
 
 !!! warning "Linux: Managing Docker as a non-root user & Context Errors"
 

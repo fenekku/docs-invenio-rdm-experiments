@@ -5,7 +5,6 @@ Now, that we have created a project folder, we need to build and set up the Inve
 The application can be built and installed in two different ways:
 
 - Local (good for developers or for customizing your instance): The application is installed locally on your machine in a Python virtual environment managed by the ``pipenv`` tool.
-- Container (good for quick preview): The application is built inside a Docker image.
 
 ## For the impatient
 

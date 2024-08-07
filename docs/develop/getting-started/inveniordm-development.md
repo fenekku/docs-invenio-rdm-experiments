@@ -28,7 +28,7 @@ invenio-cli run
 
     For development we highly recommend you use the **local** installation
     method rather the containerized installation. See the
-    [installation guide](../../install/index.md) for full details.
+    [installation guide](../../install/quickstart.md) for full details.
 
     In the future we aim to move to a fully containerized development
     environment.
@@ -71,9 +71,9 @@ invenio-cli run
 
 #### Install a forked package in an instance
 
-In some cases you might want to include a forked package in your InvenioRDM 
-instance permanently. For example, you might have a local identifier scheme that 
-you want [idutils](https://github.com/inveniosoftware/idutils) 
+In some cases you might want to include a forked package in your InvenioRDM
+instance permanently. For example, you might have a local identifier scheme that
+you want [idutils](https://github.com/inveniosoftware/idutils)
 to verify. It wouldn't be appropriate to make a pull request, since this
 change is only relevant to your organization. You can make your fork available on GitHub
 and add the following to your Pipfile:

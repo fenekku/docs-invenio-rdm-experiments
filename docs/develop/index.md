@@ -10,7 +10,7 @@ Explains how to get development install up and running:
 
 - [Source code](getting-started/source-code.md)
 - [Package development](getting-started/package-development.md)
-- [Instance development](getting-started/instance-development.md)
+- [InvenioRDM development](getting-started/inveniordm-development.md)
 - [Debugging](getting-started/debugging.md)
 - [Coding style](getting-started/code-style.md)
 - [Virtual environments](getting-started/virtualenvs.md)
